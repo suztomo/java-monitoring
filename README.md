@@ -1,5 +1,6 @@
 # Google Stackdriver Monitoring Client for Java
 
+
 Java idiomatic client for [Stackdriver Monitoring][product-docs].
 
 [![Maven][maven-version-image]][maven-version-link]
