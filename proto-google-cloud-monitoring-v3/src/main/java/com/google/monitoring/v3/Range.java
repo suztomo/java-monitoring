@@ -163,10 +163,10 @@ public final class Range extends com.google.protobuf.GeneratedMessageV3
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (min_ != 0D) {
+    if (java.lang.Double.doubleToRawLongBits(min_) != 0) {
       output.writeDouble(1, min_);
     }
-    if (max_ != 0D) {
+    if (java.lang.Double.doubleToRawLongBits(max_) != 0) {
       output.writeDouble(2, max_);
     }
     unknownFields.writeTo(output);
@@ -178,10 +178,10 @@ public final class Range extends com.google.protobuf.GeneratedMessageV3
     if (size != -1) return size;
 
     size = 0;
-    if (min_ != 0D) {
+    if (java.lang.Double.doubleToRawLongBits(min_) != 0) {
       size += com.google.protobuf.CodedOutputStream.computeDoubleSize(1, min_);
     }
-    if (max_ != 0D) {
+    if (java.lang.Double.doubleToRawLongBits(max_) != 0) {
       size += com.google.protobuf.CodedOutputStream.computeDoubleSize(2, max_);
     }
     size += unknownFields.getSerializedSize();

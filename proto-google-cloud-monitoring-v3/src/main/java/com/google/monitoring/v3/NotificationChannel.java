@@ -635,7 +635,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
   @java.lang.Override
   public boolean containsLabels(java.lang.String key) {
     if (key == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException("map key");
     }
     return internalGetLabels().getMap().containsKey(key);
   }
@@ -676,7 +676,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
   @java.lang.Override
   public java.lang.String getLabelsOrDefault(java.lang.String key, java.lang.String defaultValue) {
     if (key == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException("map key");
     }
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -696,7 +696,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
   @java.lang.Override
   public java.lang.String getLabelsOrThrow(java.lang.String key) {
     if (key == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException("map key");
     }
     java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
     if (!map.containsKey(key)) {
@@ -749,7 +749,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
   @java.lang.Override
   public boolean containsUserLabels(java.lang.String key) {
     if (key == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException("map key");
     }
     return internalGetUserLabels().getMap().containsKey(key);
   }
@@ -799,7 +799,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
   public java.lang.String getUserLabelsOrDefault(
       java.lang.String key, java.lang.String defaultValue) {
     if (key == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException("map key");
     }
     java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -823,7 +823,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
   @java.lang.Override
   public java.lang.String getUserLabelsOrThrow(java.lang.String key) {
     if (key == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException("map key");
     }
     java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
     if (!map.containsKey(key)) {
@@ -978,18 +978,18 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!getTypeBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, type_);
     }
-    if (!getDisplayNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 3, displayName_);
     }
-    if (!getDescriptionBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 4, description_);
     }
     com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(
         output, internalGetLabels(), LabelsDefaultEntryHolder.defaultEntry, 5);
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 6, name_);
     }
     com.google.protobuf.GeneratedMessageV3.serializeStringMapTo(
@@ -1012,13 +1012,13 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
     if (size != -1) return size;
 
     size = 0;
-    if (!getTypeBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, type_);
     }
-    if (!getDisplayNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, displayName_);
     }
-    if (!getDescriptionBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, description_);
     }
     for (java.util.Map.Entry<java.lang.String, java.lang.String> entry :
@@ -1031,7 +1031,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
               .build();
       size += com.google.protobuf.CodedOutputStream.computeMessageSize(5, labels__);
     }
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, name_);
     }
     for (java.util.Map.Entry<java.lang.String, java.lang.String> entry :
@@ -1954,7 +1954,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
     @java.lang.Override
     public boolean containsLabels(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       return internalGetLabels().getMap().containsKey(key);
     }
@@ -1996,7 +1996,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
     public java.lang.String getLabelsOrDefault(
         java.lang.String key, java.lang.String defaultValue) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -2016,7 +2016,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
     @java.lang.Override
     public java.lang.String getLabelsOrThrow(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       java.util.Map<java.lang.String, java.lang.String> map = internalGetLabels().getMap();
       if (!map.containsKey(key)) {
@@ -2043,7 +2043,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
      */
     public Builder removeLabels(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       internalGetMutableLabels().getMutableMap().remove(key);
       return this;
@@ -2067,11 +2067,12 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
      */
     public Builder putLabels(java.lang.String key, java.lang.String value) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       if (value == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map value");
       }
+
       internalGetMutableLabels().getMutableMap().put(key, value);
       return this;
     }
@@ -2139,7 +2140,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
     @java.lang.Override
     public boolean containsUserLabels(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       return internalGetUserLabels().getMap().containsKey(key);
     }
@@ -2189,7 +2190,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
     public java.lang.String getUserLabelsOrDefault(
         java.lang.String key, java.lang.String defaultValue) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -2213,7 +2214,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
     @java.lang.Override
     public java.lang.String getUserLabelsOrThrow(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
       if (!map.containsKey(key)) {
@@ -2244,7 +2245,7 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
      */
     public Builder removeUserLabels(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       internalGetMutableUserLabels().getMutableMap().remove(key);
       return this;
@@ -2272,11 +2273,12 @@ public final class NotificationChannel extends com.google.protobuf.GeneratedMess
      */
     public Builder putUserLabels(java.lang.String key, java.lang.String value) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       if (value == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map value");
       }
+
       internalGetMutableUserLabels().getMutableMap().put(key, value);
       return this;
     }

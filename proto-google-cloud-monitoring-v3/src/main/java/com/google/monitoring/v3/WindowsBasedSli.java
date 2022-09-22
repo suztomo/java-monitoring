@@ -585,7 +585,7 @@ public final class WindowsBasedSli extends com.google.protobuf.GeneratedMessageV
       if (typeCase_ == 1) {
         output.writeMessage(1, (com.google.monitoring.v3.RequestBasedSli) type_);
       }
-      if (threshold_ != 0D) {
+      if (java.lang.Double.doubleToRawLongBits(threshold_) != 0) {
         output.writeDouble(2, threshold_);
       }
       if (typeCase_ == 3) {
@@ -605,7 +605,7 @@ public final class WindowsBasedSli extends com.google.protobuf.GeneratedMessageV
             com.google.protobuf.CodedOutputStream.computeMessageSize(
                 1, (com.google.monitoring.v3.RequestBasedSli) type_);
       }
-      if (threshold_ != 0D) {
+      if (java.lang.Double.doubleToRawLongBits(threshold_) != 0) {
         size += com.google.protobuf.CodedOutputStream.computeDoubleSize(2, threshold_);
       }
       if (typeCase_ == 3) {
@@ -1802,7 +1802,7 @@ public final class WindowsBasedSli extends com.google.protobuf.GeneratedMessageV
 
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getTimeSeriesBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(timeSeries_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, timeSeries_);
       }
       if (range_ != null) {
@@ -1817,7 +1817,7 @@ public final class WindowsBasedSli extends com.google.protobuf.GeneratedMessageV
       if (size != -1) return size;
 
       size = 0;
-      if (!getTimeSeriesBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(timeSeries_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, timeSeries_);
       }
       if (range_ != null) {

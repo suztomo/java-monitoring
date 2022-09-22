@@ -143,6 +143,7 @@ public final class CreateTimeSeriesError extends com.google.protobuf.GeneratedMe
    *
    * <code>.google.monitoring.v3.TimeSeries time_series = 1 [deprecated = true];</code>
    *
+   * @deprecated
    * @return Whether the timeSeries field is set.
    */
   @java.lang.Override
@@ -159,6 +160,7 @@ public final class CreateTimeSeriesError extends com.google.protobuf.GeneratedMe
    *
    * <code>.google.monitoring.v3.TimeSeries time_series = 1 [deprecated = true];</code>
    *
+   * @deprecated
    * @return The timeSeries.
    */
   @java.lang.Override
@@ -194,6 +196,7 @@ public final class CreateTimeSeriesError extends com.google.protobuf.GeneratedMe
    *
    * <code>.google.rpc.Status status = 2 [deprecated = true];</code>
    *
+   * @deprecated
    * @return Whether the status field is set.
    */
   @java.lang.Override
@@ -210,6 +213,7 @@ public final class CreateTimeSeriesError extends com.google.protobuf.GeneratedMe
    *
    * <code>.google.rpc.Status status = 2 [deprecated = true];</code>
    *
+   * @deprecated
    * @return The status.
    */
   @java.lang.Override
@@ -603,6 +607,7 @@ public final class CreateTimeSeriesError extends com.google.protobuf.GeneratedMe
      *
      * <code>.google.monitoring.v3.TimeSeries time_series = 1 [deprecated = true];</code>
      *
+     * @deprecated
      * @return Whether the timeSeries field is set.
      */
     @java.lang.Deprecated
@@ -618,6 +623,7 @@ public final class CreateTimeSeriesError extends com.google.protobuf.GeneratedMe
      *
      * <code>.google.monitoring.v3.TimeSeries time_series = 1 [deprecated = true];</code>
      *
+     * @deprecated
      * @return The timeSeries.
      */
     @java.lang.Deprecated
@@ -794,6 +800,7 @@ public final class CreateTimeSeriesError extends com.google.protobuf.GeneratedMe
      *
      * <code>.google.rpc.Status status = 2 [deprecated = true];</code>
      *
+     * @deprecated
      * @return Whether the status field is set.
      */
     @java.lang.Deprecated
@@ -809,6 +816,7 @@ public final class CreateTimeSeriesError extends com.google.protobuf.GeneratedMe
      *
      * <code>.google.rpc.Status status = 2 [deprecated = true];</code>
      *
+     * @deprecated
      * @return The status.
      */
     @java.lang.Deprecated

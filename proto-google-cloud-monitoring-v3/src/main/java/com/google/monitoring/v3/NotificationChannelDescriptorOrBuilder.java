@@ -207,6 +207,7 @@ public interface NotificationChannelDescriptorOrBuilder
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @return A list containing the supportedTiers.
    */
   @java.lang.Deprecated
@@ -222,6 +223,7 @@ public interface NotificationChannelDescriptorOrBuilder
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @return The count of supportedTiers.
    */
   @java.lang.Deprecated
@@ -237,6 +239,7 @@ public interface NotificationChannelDescriptorOrBuilder
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @param index The index of the element to return.
    * @return The supportedTiers at the given index.
    */
@@ -253,6 +256,7 @@ public interface NotificationChannelDescriptorOrBuilder
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @return A list containing the enum numeric values on the wire for supportedTiers.
    */
   @java.lang.Deprecated
@@ -268,6 +272,7 @@ public interface NotificationChannelDescriptorOrBuilder
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @param index The index of the value to return.
    * @return The enum numeric value on the wire of supportedTiers at the given index.
    */

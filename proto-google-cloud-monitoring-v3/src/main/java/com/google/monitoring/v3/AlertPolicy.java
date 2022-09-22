@@ -748,10 +748,10 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
 
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getContentBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, content_);
       }
-      if (!getMimeTypeBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mimeType_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, mimeType_);
       }
       unknownFields.writeTo(output);
@@ -763,10 +763,10 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
       if (size != -1) return size;
 
       size = 0;
-      if (!getContentBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, content_);
       }
-      if (!getMimeTypeBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(mimeType_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, mimeType_);
       }
       size += unknownFields.getSerializedSize();
@@ -1798,14 +1798,14 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
                 break;
               case 8:
                 {
-                  typeCase_ = 1;
                   type_ = input.readInt32();
+                  typeCase_ = 1;
                   break;
                 }
               case 17:
                 {
-                  typeCase_ = 2;
                   type_ = input.readDouble();
+                  typeCase_ = 2;
                   break;
                 }
               default:
@@ -3729,14 +3729,14 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
 
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-        if (!getFilterBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(filter_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, filter_);
         }
         if (comparison_
             != com.google.monitoring.v3.ComparisonType.COMPARISON_UNSPECIFIED.getNumber()) {
           output.writeEnum(4, comparison_);
         }
-        if (thresholdValue_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(thresholdValue_) != 0) {
           output.writeDouble(5, thresholdValue_);
         }
         if (duration_ != null) {
@@ -3748,7 +3748,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
         for (int i = 0; i < aggregations_.size(); i++) {
           output.writeMessage(8, aggregations_.get(i));
         }
-        if (!getDenominatorFilterBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(denominatorFilter_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 9, denominatorFilter_);
         }
         for (int i = 0; i < denominatorAggregations_.size(); i++) {
@@ -3763,14 +3763,14 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
         if (size != -1) return size;
 
         size = 0;
-        if (!getFilterBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(filter_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, filter_);
         }
         if (comparison_
             != com.google.monitoring.v3.ComparisonType.COMPARISON_UNSPECIFIED.getNumber()) {
           size += com.google.protobuf.CodedOutputStream.computeEnumSize(4, comparison_);
         }
-        if (thresholdValue_ != 0D) {
+        if (java.lang.Double.doubleToRawLongBits(thresholdValue_) != 0) {
           size += com.google.protobuf.CodedOutputStream.computeDoubleSize(5, thresholdValue_);
         }
         if (duration_ != null) {
@@ -3782,7 +3782,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
         for (int i = 0; i < aggregations_.size(); i++) {
           size += com.google.protobuf.CodedOutputStream.computeMessageSize(8, aggregations_.get(i));
         }
-        if (!getDenominatorFilterBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(denominatorFilter_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, denominatorFilter_);
         }
         for (int i = 0; i < denominatorAggregations_.size(); i++) {
@@ -6991,7 +6991,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
 
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-        if (!getFilterBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(filter_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, filter_);
         }
         if (duration_ != null) {
@@ -7012,7 +7012,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
         if (size != -1) return size;
 
         size = 0;
-        if (!getFilterBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(filter_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, filter_);
         }
         if (duration_ != null) {
@@ -8902,10 +8902,10 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
         output.writeMessage(
             2, (com.google.monitoring.v3.AlertPolicy.Condition.MetricAbsence) condition_);
       }
-      if (!getDisplayNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, displayName_);
       }
-      if (!getNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 12, name_);
       }
       unknownFields.writeTo(output);
@@ -8927,10 +8927,10 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
             com.google.protobuf.CodedOutputStream.computeMessageSize(
                 2, (com.google.monitoring.v3.AlertPolicy.Condition.MetricAbsence) condition_);
       }
-      if (!getDisplayNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, displayName_);
       }
-      if (!getNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, name_);
       }
       size += unknownFields.getSerializedSize();
@@ -10359,7 +10359,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
   @java.lang.Override
   public boolean containsUserLabels(java.lang.String key) {
     if (key == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException("map key");
     }
     return internalGetUserLabels().getMap().containsKey(key);
   }
@@ -10405,7 +10405,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
   public java.lang.String getUserLabelsOrDefault(
       java.lang.String key, java.lang.String defaultValue) {
     if (key == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException("map key");
     }
     java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -10427,7 +10427,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
   @java.lang.Override
   public java.lang.String getUserLabelsOrThrow(java.lang.String key) {
     if (key == null) {
-      throw new java.lang.NullPointerException();
+      throw new NullPointerException("map key");
     }
     java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
     if (!map.containsKey(key)) {
@@ -10890,10 +10890,10 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
     }
-    if (!getDisplayNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, displayName_);
     }
     if (combiner_
@@ -10934,10 +10934,10 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
     if (size != -1) return size;
 
     size = 0;
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
     }
-    if (!getDisplayNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, displayName_);
     }
     if (combiner_
@@ -12029,7 +12029,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
     @java.lang.Override
     public boolean containsUserLabels(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       return internalGetUserLabels().getMap().containsKey(key);
     }
@@ -12075,7 +12075,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
     public java.lang.String getUserLabelsOrDefault(
         java.lang.String key, java.lang.String defaultValue) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -12097,7 +12097,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
     @java.lang.Override
     public java.lang.String getUserLabelsOrThrow(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       java.util.Map<java.lang.String, java.lang.String> map = internalGetUserLabels().getMap();
       if (!map.containsKey(key)) {
@@ -12126,7 +12126,7 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
      */
     public Builder removeUserLabels(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       internalGetMutableUserLabels().getMutableMap().remove(key);
       return this;
@@ -12152,11 +12152,12 @@ public final class AlertPolicy extends com.google.protobuf.GeneratedMessageV3
      */
     public Builder putUserLabels(java.lang.String key, java.lang.String value) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       if (value == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map value");
       }
+
       internalGetMutableUserLabels().getMutableMap().put(key, value);
       return this;
     }

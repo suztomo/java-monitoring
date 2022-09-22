@@ -189,6 +189,7 @@ public interface ServiceOrBuilder
    *
    * <code>.google.monitoring.v3.Service.ClusterIstio cluster_istio = 9 [deprecated = true];</code>
    *
+   * @deprecated
    * @return Whether the clusterIstio field is set.
    */
   @java.lang.Deprecated
@@ -202,6 +203,7 @@ public interface ServiceOrBuilder
    *
    * <code>.google.monitoring.v3.Service.ClusterIstio cluster_istio = 9 [deprecated = true];</code>
    *
+   * @deprecated
    * @return The clusterIstio.
    */
   @java.lang.Deprecated

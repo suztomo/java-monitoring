@@ -557,7 +557,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
 
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getGroupIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(groupId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, groupId_);
       }
       if (resourceType_
@@ -573,7 +573,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
       if (size != -1) return size;
 
       size = 0;
-      if (!getGroupIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(groupId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, groupId_);
       }
       if (resourceType_
@@ -2202,10 +2202,10 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
 
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-        if (!getUsernameBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(username_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 1, username_);
         }
-        if (!getPasswordBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(password_)) {
           com.google.protobuf.GeneratedMessageV3.writeString(output, 2, password_);
         }
         unknownFields.writeTo(output);
@@ -2217,10 +2217,10 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
         if (size != -1) return size;
 
         size = 0;
-        if (!getUsernameBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(username_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, username_);
         }
-        if (!getPasswordBytes().isEmpty()) {
+        if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(password_)) {
           size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, password_);
         }
         size += unknownFields.getSerializedSize();
@@ -3079,7 +3079,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
     @java.lang.Override
     public boolean containsHeaders(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       return internalGetHeaders().getMap().containsKey(key);
     }
@@ -3129,7 +3129,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
     public java.lang.String getHeadersOrDefault(
         java.lang.String key, java.lang.String defaultValue) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       java.util.Map<java.lang.String, java.lang.String> map = internalGetHeaders().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -3153,7 +3153,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
     @java.lang.Override
     public java.lang.String getHeadersOrThrow(java.lang.String key) {
       if (key == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException("map key");
       }
       java.util.Map<java.lang.String, java.lang.String> map = internalGetHeaders().getMap();
       if (!map.containsKey(key)) {
@@ -3260,7 +3260,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
       if (useSsl_ != false) {
         output.writeBool(1, useSsl_);
       }
-      if (!getPathBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(path_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, path_);
       }
       if (port_ != 0) {
@@ -3302,7 +3302,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
       if (useSsl_ != false) {
         size += com.google.protobuf.CodedOutputStream.computeBoolSize(1, useSsl_);
       }
-      if (!getPathBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(path_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, path_);
       }
       if (port_ != 0) {
@@ -4417,7 +4417,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
       @java.lang.Override
       public boolean containsHeaders(java.lang.String key) {
         if (key == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException("map key");
         }
         return internalGetHeaders().getMap().containsKey(key);
       }
@@ -4467,7 +4467,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
       public java.lang.String getHeadersOrDefault(
           java.lang.String key, java.lang.String defaultValue) {
         if (key == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException("map key");
         }
         java.util.Map<java.lang.String, java.lang.String> map = internalGetHeaders().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
@@ -4491,7 +4491,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
       @java.lang.Override
       public java.lang.String getHeadersOrThrow(java.lang.String key) {
         if (key == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException("map key");
         }
         java.util.Map<java.lang.String, java.lang.String> map = internalGetHeaders().getMap();
         if (!map.containsKey(key)) {
@@ -4522,7 +4522,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
        */
       public Builder removeHeaders(java.lang.String key) {
         if (key == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException("map key");
         }
         internalGetMutableHeaders().getMutableMap().remove(key);
         return this;
@@ -4550,11 +4550,12 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
        */
       public Builder putHeaders(java.lang.String key, java.lang.String value) {
         if (key == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException("map key");
         }
         if (value == null) {
-          throw new java.lang.NullPointerException();
+          throw new NullPointerException("map value");
         }
+
         internalGetMutableHeaders().getMutableMap().put(key, value);
         return this;
       }
@@ -5924,7 +5925,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
 
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-      if (!getContentBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, content_);
       }
       if (matcher_
@@ -5942,7 +5943,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
       if (size != -1) return size;
 
       size = 0;
-      if (!getContentBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, content_);
       }
       if (matcher_
@@ -7300,6 +7301,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
    *
    * <code>bool is_internal = 15 [deprecated = true];</code>
    *
+   * @deprecated
    * @return The isInternal.
    */
   @java.lang.Override
@@ -7422,10 +7424,10 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
     getSerializedSize();
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
     }
-    if (!getDisplayNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, displayName_);
     }
     if (resourceCase_ == 3) {
@@ -7473,10 +7475,10 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
     if (size != -1) return size;
 
     size = 0;
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
     }
-    if (!getDisplayNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, displayName_);
     }
     if (resourceCase_ == 3) {
@@ -10433,6 +10435,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
      *
      * <code>bool is_internal = 15 [deprecated = true];</code>
      *
+     * @deprecated
      * @return The isInternal.
      */
     @java.lang.Override
@@ -10452,6 +10455,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
      *
      * <code>bool is_internal = 15 [deprecated = true];</code>
      *
+     * @deprecated
      * @param value The isInternal to set.
      * @return This builder for chaining.
      */
@@ -10474,6 +10478,7 @@ public final class UptimeCheckConfig extends com.google.protobuf.GeneratedMessag
      *
      * <code>bool is_internal = 15 [deprecated = true];</code>
      *
+     * @deprecated
      * @return This builder for chaining.
      */
     @java.lang.Deprecated

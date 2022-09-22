@@ -501,6 +501,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @return A list containing the supportedTiers.
    */
   @java.lang.Override
@@ -521,6 +522,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @return The count of supportedTiers.
    */
   @java.lang.Override
@@ -539,6 +541,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @param index The index of the element to return.
    * @return The supportedTiers at the given index.
    */
@@ -558,6 +561,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @return A list containing the enum numeric values on the wire for supportedTiers.
    */
   @java.lang.Override
@@ -576,6 +580,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
    * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
    * </code>
    *
+   * @deprecated
    * @param index The index of the value to return.
    * @return The enum numeric value on the wire of supportedTiers at the given index.
    */
@@ -637,13 +642,13 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
     getSerializedSize();
-    if (!getTypeBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, type_);
     }
-    if (!getDisplayNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, displayName_);
     }
-    if (!getDescriptionBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 3, description_);
     }
     for (int i = 0; i < labels_.size(); i++) {
@@ -656,7 +661,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
     for (int i = 0; i < supportedTiers_.size(); i++) {
       output.writeEnumNoTag(supportedTiers_.get(i));
     }
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 6, name_);
     }
     if (launchStage_ != com.google.api.LaunchStage.LAUNCH_STAGE_UNSPECIFIED.getNumber()) {
@@ -671,13 +676,13 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
     if (size != -1) return size;
 
     size = 0;
-    if (!getTypeBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, type_);
     }
-    if (!getDisplayNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(displayName_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, displayName_);
     }
-    if (!getDescriptionBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, description_);
     }
     for (int i = 0; i < labels_.size(); i++) {
@@ -696,7 +701,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
       }
       supportedTiersMemoizedSerializedSize = dataSize;
     }
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, name_);
     }
     if (launchStage_ != com.google.api.LaunchStage.LAUNCH_STAGE_UNSPECIFIED.getNumber()) {
@@ -1962,6 +1967,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @return A list containing the supportedTiers.
      */
     @java.lang.Deprecated
@@ -1981,6 +1987,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @return The count of supportedTiers.
      */
     @java.lang.Deprecated
@@ -1998,6 +2005,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @param index The index of the element to return.
      * @return The supportedTiers at the given index.
      */
@@ -2016,6 +2024,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @param index The index to set the value at.
      * @param value The supportedTiers to set.
      * @return This builder for chaining.
@@ -2041,6 +2050,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @param value The supportedTiers to add.
      * @return This builder for chaining.
      */
@@ -2065,6 +2075,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @param values The supportedTiers to add.
      * @return This builder for chaining.
      */
@@ -2089,6 +2100,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @return This builder for chaining.
      */
     @java.lang.Deprecated
@@ -2109,6 +2121,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @return A list containing the enum numeric values on the wire for supportedTiers.
      */
     @java.lang.Deprecated
@@ -2126,6 +2139,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of supportedTiers at the given index.
      */
@@ -2144,6 +2158,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of supportedTiers at the given index.
      * @return This builder for chaining.
@@ -2166,6 +2181,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @param value The enum numeric value on the wire for supportedTiers to add.
      * @return This builder for chaining.
      */
@@ -2187,6 +2203,7 @@ public final class NotificationChannelDescriptor extends com.google.protobuf.Gen
      * <code>repeated .google.monitoring.v3.ServiceTier supported_tiers = 5 [deprecated = true];
      * </code>
      *
+     * @deprecated
      * @param values The enum numeric values on the wire for supportedTiers to add.
      * @return This builder for chaining.
      */

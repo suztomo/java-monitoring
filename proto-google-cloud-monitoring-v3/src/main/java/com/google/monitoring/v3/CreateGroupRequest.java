@@ -273,7 +273,7 @@ public final class CreateGroupRequest extends com.google.protobuf.GeneratedMessa
     if (validateOnly_ != false) {
       output.writeBool(3, validateOnly_);
     }
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 4, name_);
     }
     unknownFields.writeTo(output);
@@ -291,7 +291,7 @@ public final class CreateGroupRequest extends com.google.protobuf.GeneratedMessa
     if (validateOnly_ != false) {
       size += com.google.protobuf.CodedOutputStream.computeBoolSize(3, validateOnly_);
     }
-    if (!getNameBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, name_);
     }
     size += unknownFields.getSerializedSize();

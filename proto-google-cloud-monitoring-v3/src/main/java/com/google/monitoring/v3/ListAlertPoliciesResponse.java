@@ -263,7 +263,7 @@ public final class ListAlertPoliciesResponse extends com.google.protobuf.Generat
 
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output) throws java.io.IOException {
-    if (!getNextPageTokenBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nextPageToken_)) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, nextPageToken_);
     }
     for (int i = 0; i < alertPolicies_.size(); i++) {
@@ -278,7 +278,7 @@ public final class ListAlertPoliciesResponse extends com.google.protobuf.Generat
     if (size != -1) return size;
 
     size = 0;
-    if (!getNextPageTokenBytes().isEmpty()) {
+    if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nextPageToken_)) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, nextPageToken_);
     }
     for (int i = 0; i < alertPolicies_.size(); i++) {

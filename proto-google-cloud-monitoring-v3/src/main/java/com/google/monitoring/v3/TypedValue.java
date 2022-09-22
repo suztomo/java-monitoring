@@ -70,20 +70,20 @@ public final class TypedValue extends com.google.protobuf.GeneratedMessageV3
             break;
           case 8:
             {
-              valueCase_ = 1;
               value_ = input.readBool();
+              valueCase_ = 1;
               break;
             }
           case 16:
             {
-              valueCase_ = 2;
               value_ = input.readInt64();
+              valueCase_ = 2;
               break;
             }
           case 25:
             {
-              valueCase_ = 3;
               value_ = input.readDouble();
+              valueCase_ = 3;
               break;
             }
           case 34:

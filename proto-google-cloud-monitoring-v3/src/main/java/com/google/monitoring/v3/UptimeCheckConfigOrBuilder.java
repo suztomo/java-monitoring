@@ -505,6 +505,7 @@ public interface UptimeCheckConfigOrBuilder
    *
    * <code>bool is_internal = 15 [deprecated = true];</code>
    *
+   * @deprecated
    * @return The isInternal.
    */
   @java.lang.Deprecated
